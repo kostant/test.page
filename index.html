@@ -1,0 +1,17 @@
+<li><a href="yamarket://lavka">Lavka</a>
+<li><a href="yamarket://wishlist">Wish</a>
+<li><a href="yamarket://select-address">Select Address</a>
+
+<script>
+  document.write("<li>" + document.cookie);
+</script>
+
+<script>
+  window.ExpressService && window.ExpressService.update({
+    shouldUpdateAddress: true,
+    warehousesCache: "ENCODED_CACHE",
+    expressNotAvailable: true,
+    edaNotAvailable: true
+  })
+</script>
+  
